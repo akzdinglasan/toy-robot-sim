@@ -1,11 +1,11 @@
-const enum Facing {
+export const enum Facing {
     NORTH,
     EAST,
     SOUTH,
     WEST
 }
 
-interface Position {
+export interface Position {
     x: number;
     y: number;
     facing: Facing

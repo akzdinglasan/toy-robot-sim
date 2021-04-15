@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/app.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require ts-node/register --watch-extensions ts \"tests/*.ts\""
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,14 @@
   "homepage": "https://github.com/akzdinglasan/toy-robot-sim#readme",
   "dependencies": {
     "@types/node": "^14.14.37",
-    "ts-node": "^9.1.1",
     "tslint": "^6.1.3",
     "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1"
   }
 }
